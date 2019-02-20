@@ -1,0 +1,10 @@
+.idea
+node_modules
+.DS_Store
+#dist
+coverage
+.nyc_output
+build.config.json
+npm-debug.log
+.cache
+dist

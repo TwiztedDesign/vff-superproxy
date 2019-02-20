@@ -1,0 +1,39 @@
+{
+  "name": "clean-parcel-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test"            : "echo \"Error: no test specified\"",
+    "watch"           : "parcel watch src/index.js",
+    "build"           : "parcel build src/index.js",
+    "preversion"      : "npm run lint",
+    "lint"            : "eslint src",
+    "prepare"         : "npm run build",
+    "prepublishOnly"  : "npm test && npm run lint"
+  },
+  "files": [
+    "dist",
+    "test/setup.js"
+  ],
+  "keywords": [
+    "vff",
+    "broadcast",
+    "graphics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwiztedDesign/clean-parcel-project.git"
+  },
+  "author": "Danny Umansky <dok.umansky@twizted-design.com> (http://www.twizted-design.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TwiztedDesign/clean-parcel-project/issues"
+  },
+  "homepage": "https://github.com/TwiztedDesign/clean-parcel-project#readme",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "node-sass": "^4.9.3",
+    "parcel": "1.11.0"
+  }
+}
